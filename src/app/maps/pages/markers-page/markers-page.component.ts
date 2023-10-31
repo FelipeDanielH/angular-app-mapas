@@ -61,6 +61,17 @@ export class MarkersPageComponent {
     this.markers[index].marker.remove()
     this.markers.splice(index, 1)
   }
+
+  flyTo(marker: Marker) {
+
+    const lng: number = marker.getLngLat().lng;
+    const lat: number = marker.getLngLat().lat;
+
+    this.map?.flyTo({
+      zoom: 16,
+      center: [lng,lat]
+    })
+  }
 }
 
 //referencia para crear markers por codigo
