@@ -1,7 +1,6 @@
 #map {
   width: 100vw;
   height: 100vh;
-  background-color: red;
 }
 
 .floating-range {
@@ -19,3 +18,4 @@
   display: flex;
   align-items: center;
 }
+
