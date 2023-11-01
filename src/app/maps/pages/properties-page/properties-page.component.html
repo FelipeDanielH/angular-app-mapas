@@ -1,1 +1,35 @@
-<p>properties-page works!</p>
+
+<!-- Espaciado -->
+<div class="row mt-3">
+  <div class="col-2"> </div>
+  <div class="col">
+
+    <!-- Titulo -->
+    <h3>Listado de propiedades</h3>
+    <hr>
+
+  </div>
+</div>
+
+<!-- Espaciado -->
+<div class="row">
+  <div class="col-2"></div>
+  <div class="col">
+
+    <div class="row">
+      <!-- Houses -->
+      <div *ngFor="let house of houses" class="col-4 mb-2">
+        <div class="card">
+          <img src="..." class="card-img-top">
+
+          <div class="card-body">
+            <h5 class="card-title">{{house.title}}</h5>
+            <p class="card-text">{{house.description}}</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
