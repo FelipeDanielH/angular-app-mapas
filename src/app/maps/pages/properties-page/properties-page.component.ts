@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { CounterAloneComponent } from 'src/app/alone/components/counter-alone/counter-alone.component';
+import { CommonModule } from '@angular/common';
 interface House {
   title: string;
   description: string;
   lngLat: [number, number];
 }
+
 @Component({
   templateUrl: './properties-page.component.html',
   styleUrls: ['./properties-page.component.css']
